@@ -204,17 +204,15 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
 
-                    <form id="contactForm" target="_blank" action="https://formsubmit.co/kobylinski.s@gmail.com"
-                        method="POST">
+                    <form id="contactForm" target="_blank" action="https://formsubmit.co/kobylinski.s@gmail.com" method="POST">
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com"
-                                data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
                             <label for="email">Twój email</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">Email jest wymagany</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email nie jest poprawny</div>
                         </div>
                         <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text"
+                            <textarea class="form-control" id="message" name="message"
                                 placeholder="Enter your message here..." style="height: 10rem"
                                 data-sb-validations="required"></textarea>
                             <label for="message">Wiadomość</label>
