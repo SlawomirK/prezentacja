@@ -64,8 +64,6 @@
         <div class="container">
             <!-- Portfolio Section Heading-->
             <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-
-
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -82,8 +80,8 @@
                         dodawanie lub modyfikowanie wielu funkcjonalności, czy to we Frontendzie, czy w Backendzie przy
                         wykorzystaniu Angulara i Springboot.
                         Oprócz tego mam na koncie kilka prywatnych projektów.
-                        Nie będę tutaj wymieniał ich wszystkich. Pominę aplikacje uruchamiane w konsoli. Wspomnę jedynie o takich które były pisane stosunkowo
-                        niedawno.
+                        Nie będę tutaj wymieniał ich wszystkich. Pominę aplikacje uruchamiane w konsoli. 
+                        Wspomnę jedynie o takich które były pisane stosunkowo niedawno.
                     </p>
                     <p align="center"><em> Szczegółowe informacje rozwiną się po kliknięciu na screen.</em></p>
                 </div>
@@ -193,7 +191,7 @@
     <section class="page-section" id="contact">
         <div class="container">
             <!-- Contact Section Heading-->
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Kontakt</h2>
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Formularz kontaktowy</h2>
             <!-- Icon Divider-->
             <div class="divider-custom">
                 <div class="divider-custom-line"></div>
@@ -203,10 +201,9 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-
-                    <form id="contactForm" target="_blank" action="https://formsubmit.co/kobylinski.s@gmail.com" method="POST">
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjwgakq" method="post">                        
                         <div class="form-floating mb-3">
-                            <input class="form-control" id="email" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <input class="form-control" id="email" name="_replyto" type="email" placeholder="name@example.com" data-sb-validations="required,email" required=""/>
                             <label for="email">Twój email</label>
                             <div class="invalid-feedback" data-sb-feedback="email:required">Email jest wymagany</div>
                             <div class="invalid-feedback" data-sb-feedback="email:email">Email nie jest poprawny</div>
@@ -214,7 +211,7 @@
                         <div class="form-floating mb-3">
                             <textarea class="form-control" id="message" name="message"
                                 placeholder="Enter your message here..." style="height: 10rem"
-                                data-sb-validations="required"></textarea>
+                                data-sb-validations="required" required=""></textarea>
                             <label for="message">Wiadomość</label>
                             <div class="invalid-feedback" data-sb-feedback="message:required">Wiadomość jest wymagana
                             </div>
