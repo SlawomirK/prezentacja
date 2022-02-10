@@ -11435,14 +11435,16 @@ html {
 
 }
 .circular {
-	width: 200px;
-	height: 200px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-  max-width: 90%;
-    height: auto;
+	width: 150px;
+	border-radius: 150px;    
+    border-radius: 50%;
+    border:3px solid blanchedalmond;
+    filter: grayscale(100%);
+    
 	}
+  .circular:hover{
+    filter: grayscale(0%);
+  }
 
 @media (min-width: 992px) {
   .masthead {
